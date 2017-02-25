@@ -6,7 +6,7 @@ This is a temporary script file.
 """
 
 from pytest import mark
-from hypothesis import given
+from hypothesis import given, example
 from hypothesis.strategies import integers
 
 import mystery as mys
