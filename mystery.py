@@ -7,4 +7,7 @@ Created on Sat Feb 25 16:05:12 2017
 """
 
 def xxx(a,b):
-    return(2)
+    if a==b:
+        return 2
+    else:
+        return 1
