@@ -14,3 +14,4 @@ def test_1():
 
 def test_2():
     assert mys.xxx(1, 0) == 1
+
