@@ -5,13 +5,14 @@ Spyder Editor
 This is a temporary script file.
 """
 
+from pytest import mark
+
 import mystery as mys
 
-
-def test_1():
-    assert mys.xxx(1, 1) == 2
-
-
-def test_2():
-    assert mys.xxx(1, 0) == 1
+@mark.parametrize( "a   b  c".split(),
+                  ((1,  1, 2),
+                   (1,  0, 1),
+                   (1, -1, 0)))
+def test_1(a, b, c):
+    assert mys.xxx(a, b) == c
 
