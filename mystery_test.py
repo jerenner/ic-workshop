@@ -22,4 +22,9 @@ def test_1(a, b, c):
 @example(3, 0)
 def test_2(a, b):
     assert mys.xxx(a, b) == mys.xxx(b, a)
+
+@given(integers(), integers(), integers())
+@example(3, 0, 1)
+def test_3(a, b, c):
+    assert mys.xxx(a, mys.xxx(b, c)) == mys.xxx(mys.xxx(a, b), c)
     
