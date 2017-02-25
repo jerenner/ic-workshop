@@ -7,7 +7,7 @@ Created on Sat Feb 25 16:05:12 2017
 """
 
 def xxx(a,b):
-    if b < 0:
+    if b < 0 or a < 0:
         return 0
     if a==b:
         return 2
